@@ -1,0 +1,29 @@
+{
+  "users": [{
+      "name": "moaz ELdefrawy",
+      "id": " some ID ",
+      "address": " some address",
+      "location": " some location ",
+      "number": " 1231",
+    },
+  ],
+  "posts" : [ {
+    "postID": "as",
+    "user" : null,
+    "subject" : "subject 1",
+    "content" : "post 1",
+    "location" : "coordinates 1",
+    "address": " 1",
+    "city" : "alex 1",
+    "comments" : []
+  }, {
+    "postID": "as",
+    "user" : null,
+    "subject" : "subject 2",
+    "content" : "post 2",
+    "location" : "coordinates 2",
+    "address": "2",
+    "city" : "alex 2",
+    "comments" : []
+  } ]
+}

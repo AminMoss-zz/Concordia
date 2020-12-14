@@ -1,0 +1,247 @@
+#submitrow {
+    margin-top: 150px;
+    margin-bottom: 60px;
+}
+
+#postrow {
+    margin-top: 30px;
+}
+
+.postsubmit {
+    display: flex;
+    flex-wrap: wrap;
+
+    border: #33461d 4px solid;
+    border-radius: 20px;
+}
+
+.pfp {
+    margin-top: 5px;
+
+    height: 50px;
+    width: 50px;
+
+    background: url("../images/37d598e5a04344da81c76621ba273915.jpg");
+    background-size: cover;
+    border-radius: 20px;
+}
+
+.postsubmit > .pfp {
+    margin-top: 2%;
+    margin-left: 2%;
+    padding-right: 5%;
+}
+
+#media1 {
+    margin-top: 1%;
+    padding-left: 1%;
+    padding-top: 10px;
+    margin-right: 20px;
+
+    height: 80%;
+    width: 90%;
+}
+
+.form-control {
+    padding: 0;
+}
+
+.form-control:focus {
+    outline: 0;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+}
+
+#submitinput {
+    background: transparent;
+    border: none;
+    resize: none;
+    padding: 5px;
+
+    font-size: 20px;
+    word-wrap: break-word;
+    font-family: "Eczar", serif !important;
+
+    -webkit-transition: height 0.2s;
+    -moz-transition: height 0.2s;
+    transition: height 0.2s;
+}
+
+#submitinput::placeholder {
+    text-indent: 2px;
+    font-family: "Eczar", serif !important;
+    font-weight: bolder;
+    font-size: 20px;
+    color: white;
+}
+
+#submitinput:focus {
+    border: none !important;
+    outline: none !important;
+}
+
+#locationicon {
+    margin-left: 90px;
+    margin-bottom: 15px;
+}
+
+#dropright {
+    margin-left: 150px;
+    margin-bottom: 10px;
+
+    height: 40px;
+
+    background-color: #2f6a64;
+    border: none;
+    border-radius: 40px;
+}
+
+#dropbutton {
+    background-color: #2f6a64;
+    padding: 5px;
+    padding-right: 10px;
+    padding-left: 10px;
+}
+
+#dropbutton:focus {
+    border: none;
+    outline: 0;
+    -webkit-box-shadow: none;
+    box-shadow: none !important;
+}
+
+.dropdown-menu {
+    background-color: #5bb6ad;
+}
+
+.dropdown-item {
+    color: #ffffff;
+}
+
+.dropdown-item:hover {
+    background-color: #2f6a64;
+    color: #ffffff;
+}
+
+.bottom-left {
+    bottom: 0;
+    left: 0;
+}
+
+#submitbutton {
+    position: relative;
+    overflow: hidden;
+
+    margin-bottom: 10px;
+    margin-right: 40px;
+
+    padding: 10px;
+    height: 40px;
+    width: 100px;
+
+    background-color: #2f6a64;
+    border: none;
+    border-radius: 40px;
+
+    font-size: 13px;
+    color: #ffffff;
+    justify-content: center;
+    text-align: center;
+    text-decoration: none;
+
+    -webkit-transition-duration: 0.8s; /* Safari */
+    transition-duration: 0.8s;
+    cursor: pointer;
+}
+
+#submitbutton:focus {
+    outline: none !important;
+}
+
+#submitbutton:hover {
+    background-color: #5bb6ad;
+}
+
+#submitbutton:after {
+    content: "";
+    position: absolute;
+    background: #345c41;
+    display: block;
+    border-radius: 25px;
+    padding-top: 300%;
+    padding-left: 350%;
+    margin-left: -30px !important;
+    margin-top: -120%;
+    opacity: 0;
+    transition: all 1s;
+}
+
+#submitbutton:active:after {
+    padding: 0;
+    margin: 0;
+    opacity: 1;
+    transition: 0s;
+}
+
+.postborder {
+    padding-top: 10px;
+
+    text-align: center;
+
+    border-radius: 20px;
+    background: #1b1b1b;
+    border: #33461d 5px solid;
+    box-shadow: 0 5px #2e3d1c inset, 0 10px #2a351c inset, 0 15px #252c1c inset;
+}
+
+.secondpostborder {
+    margin-left: 1%;
+
+    text-align: center;
+    padding-bottom: 10px;
+
+    border-radius: 20px;
+    background: #1b1b1b;
+    border: #33461d 5px solid;
+    box-shadow: 0 -5px 1px -1px#2E3D1C inset, 0 -10px 1px -1px #2a351c inset,
+        0 -15px 1px -1px #252c1c inset;
+}
+
+.user {
+    display: flex;
+    height: 60px;
+    margin-left: 15px;
+    margin-top: 10px;
+    padding-left: 15px;
+}
+
+.username {
+    font-family: "Eczar", serif !important;
+    text-align: left;
+    padding-left: 10px;
+    margin: 0;
+    margin-top: 10px;
+}
+
+.username > a {
+    color: #345c41;
+}
+
+.contentdiv {
+    margin-left: 15px;
+}
+
+.content {
+    margin: 0;
+    padding: 15px;
+
+    font-family: sans-serif;
+    text-align: start;
+    line-height: 20px;
+}
+
+#map,
+#secondmap {
+    height: 100%;
+    border-radius: 20px;
+}

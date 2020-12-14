@@ -1,0 +1,19 @@
+extends layout
+ 
+  
+block layout-content
+  #slogan
+    p Give Back
+  #login
+    .col
+        a.fb.btn(href='#')
+            p.fa.fa-facebook.fa-fw
+                |  Login with Facebook
+        a.twitter.btn(href='#')
+            p.fa.fa-twitter.fa-fw
+                |  Login with Twitter+
+  #africa
+  script(src='https://www.gstatic.com/firebasejs/7.15.2/firebase-app.js')
+  script(src='https://www.gstatic.com/firebasejs/7.15.2/firebase-auth.js')
+  script(src='https://www.gstatic.com/firebasejs/7.15.2/firebase-firestore.js')
+  script(defer='' async='' src='../../scripts/login.js')

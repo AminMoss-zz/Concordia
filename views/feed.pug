@@ -1,0 +1,79 @@
+extends layout
+
+block headtag
+    link(rel="stylesheet" href="/css/newfeed.css")
+    link(rel="stylesheet" href="/css/feed.css")
+    link(rel='stylesheet' href='https://fonts.googleapis.com/css2?family=Lobster&display=swap')
+    script(src='https://kit.fontawesome.com/e0bc129592.js' crossorigin='anonymous')
+
+
+block layout-content
+    .postsubmit
+        .pfp
+        textarea#submitinput(name='Status' cols='40' rows='10' placeholder="What's going on?")
+        .break
+        #locationicon
+            i.fas.fa-map-marked-alt.fa-2x(style='color: #2F6A64;')
+        button.btn.btn-primary#submitbutton Shout!
+    #container.container
+        .post
+            .postborder
+                .user
+                    .pfp
+                    h2.username
+                        a(href='#')  Moaz
+                .contentdiv
+                    p.content
+                        | Lorem Ipsum is simply dummy text of the printing and typesetting
+                        | industry. Lorem Ipsum has been the industry standard dummy
+                        | text ever since the 1500s, when an unknown printer took a galley
+                        | of type and scrambled it to make a type specimen book. It has
+                        | survived not only five centuries, but also the leap into
+                        | electronic typesetting, remaining essentially unchanged. It was
+                        | popularised in the 1960s with the release of Letraset sheets
+                        | containing Lorem Ipsum passages, and more recently with desktop
+                        | publishing software like Aldus PageMaker including versions of
+                        | Lorem Ipsum.
+            #map
+                script.
+                    function initMap() {
+                    // The location of Uluru
+                    var uluru = { lat: -25.344, lng: 131.036 };
+                    // The map, centered at Uluru
+                    var map = new google.maps.Map(document.getElementById("map"), {
+                    zoom: 4,
+                    center: uluru,
+                    });
+                    var map2 = new google.maps.Map(document.getElementById("secondmap"), {
+                    zoom: 4,
+                    center: uluru,
+                    });
+                    // The marker, positioned at Uluru
+                    var marker = new google.maps.Marker({
+                    position: uluru,
+                    map: map,
+                    });
+                    }
+        .post
+            #secondmap
+            .secondpostborder
+                .user
+                    .pfp
+                    h2.username
+                        a(href='#')  Moaz
+                .contentdiv
+                    p.content
+                        | Lorem Ipsum is simply dummy text of the printing and typesetting
+                        | industry. Lorem Ipsum has been the industry standard dummy
+                        | text ever since the 1500s, when an unknown printer took a galley
+                        | of type and scrambled it to make a type specimen book. It has
+                        | survived not only five centuries, but also the leap into
+                        | electronic typesetting, remaining essentially unchanged. It was
+                        | popularised in the 1960s with the release of Letraset sheets
+                        | containing Lorem Ipsum passages, and more recently with desktop
+                        | publishing software like Aldus PageMaker including versions of
+                        | Lorem Ipsum.
+    script(async='' defer='' src='https://maps.googleapis.com/maps/api/js?key=AIzaSyDiXueHsLIsYcnjjppxwoQOzMKmbzbQkE0&callback=initMap')
+    script(src='https://www.gstatic.com/firebasejs/3.2.0/firebase.js')
+    script(src='../scripts/feedLoader.js')
+

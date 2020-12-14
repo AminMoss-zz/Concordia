@@ -1,0 +1,206 @@
+* {
+    box-sizing: border-box;
+    color: white;
+}
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+
+    display: flex;
+    flex-flow: column;
+
+    background-color: #1b1b1b;
+
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+#root {
+    overflow-x: visible;
+    height: 100%;
+    width: 100%;
+
+    display: flex;
+
+    background-color: #1b1b1b;
+}
+
+#menu {
+    position: fixed;
+    height: 100px;
+    width: 100%;
+
+    display: flex;
+
+    background-color: #1b1b1b;
+
+    border-bottom: #2f6a64 2px solid;
+
+    transition: top 1s;
+
+    z-index: 99;
+}
+
+#icon {
+    position: fixed;
+    margin-top: 5px;
+    left: 60px;
+    margin-right: 0px;
+
+    height: 100px;
+    width: 350px;
+
+    background-image: url("../images/test.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+#name {
+    overflow: hidden;
+    position: fixed;
+    left: 120px;
+
+    text-align: center;
+}
+
+#name > p {
+    margin: 0;
+    padding: 15px;
+    margin-top: -15px;
+
+    font-size: 80px;
+    font-family: "East Sea Dokdo", cursive;
+    color: #2f6a64;
+}
+
+.menuitems {
+    overflow: hidden;
+    list-style-type: none;
+
+    position: fixed;
+    right: 40px;
+
+    width: 25%;
+    height: 100px;
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    float: left;
+}
+
+li > a {
+    display: block;
+    color: #2f6a64;
+    text-align: center;
+    padding: 39px;
+    text-decoration: none;
+    font-family: sans-serif;
+}
+
+li > a:hover {
+    color: #1da1f2;
+    background-color: #2f6a64;
+}
+
+#africa {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    margin-top: -200px;
+
+    height: 400px;
+    width: 400px;
+    background: url("../images/Locator_map_of_Egypt_in_Africa.svg.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+#slogan {
+    position: fixed;
+    top: 45%;
+    right: 50%;
+    margin-top: -50px;
+
+    height: 100px;
+    width: 300px;
+}
+
+#slogan > p {
+    margin: 0;
+    padding: 0;
+
+    font-family: "East Sea Dokdo", cursive;
+    font-size: 60px;
+    color: #1da1f2;
+    text-align: center;
+}
+
+#login {
+    position: fixed;
+    top: 50%;
+    right: 50%;
+
+    width: 300px;
+}
+
+.col {
+    float: left;
+    width: 100%;
+    margin: auto;
+    margin-top: 6px;
+}
+
+a > p {
+    margin: 0;
+    padding: 0;
+}
+
+.fb {
+    background-color: #3b5998;
+    color: white;
+}
+
+.btn {
+    width: 100%;
+    padding: 12px;
+    border: none;
+    border-radius: 20px;
+    margin: 5px 0;
+    opacity: 0.85;
+    display: inline-block;
+    font-size: 17px;
+    font-family: sans-serif;
+    line-height: 20px;
+    text-decoration: none;
+    text-align: center;
+}
+
+.btn:hover {
+    opacity: 1;
+}
+
+.twitter {
+    background-color: #55acee;
+    color: white;
+}
+
+@media screen and (max-width: 650px) {
+    .col {
+        width: 100%;
+        margin-top: 0;
+    }
+    /* hide the vertical line */
+    .vl {
+        display: none;
+    }
+    /* show the hidden text on small screens */
+    .hide-md-lg {
+        display: block;
+        text-align: center;
+    }
+}

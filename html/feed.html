@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <link
+      rel="shortcut icon"
+      ,
+      href="../images/ss_monogram_michaelspitz-cropped.png"
+    />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <meta name="theme-color" content="#000000" />
+    <title>Concordia</title>
+    <link rel="stylesheet" href="../css/feed.css" />
+    <link rel="stylesheet" href="../css/home.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Lobster&display=swap"
+    />
+    <script
+      src="https://kit.fontawesome.com/e0bc129592.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+
+  <body>
+    <div id="root">
+      <div id="menu">
+        <div id="icon"></div>
+        <div id="name">
+          <p>Concordia</p>
+        </div>
+        <ul class="menuitems">
+          <li class="menuitem"><a href="#Home">Home</a></li>
+          <li class="menuitem"><a href="#Feed">Feed</a></li>
+          <li class="menuitem"><a href="#SignIn">Sign In</a></li>
+          <li class="menuitem"><a href="#SignUp">Sign Up</a></li>
+        </ul>
+      </div>
+
+      <div class="postsubmit">
+        <div class="pfp"></div>
+        <textarea
+          name="Status"
+          id="submitinput"
+          cols="40"
+          rows="10"
+          placeholder="What's going on?"
+        ></textarea>
+        <div class="break"></div>
+        <div id="locationicon">
+          <i style="color: #8c2424;" class="fas fa-map-marked-alt fa-2x"></i>
+        </div>
+        <button id="submitbutton">Send!</button>
+      </div>
+
+      <div class="container" id="container">
+        <div class="post">
+          <div class="postBorder">
+            <div class="user">
+              <div class="pfp"></div>
+              <h2 class="username">
+                <a href="#"> Moaz</a>
+              </h2>
+            </div>
+            <div>
+              <h2 class="subject"> Subject </h2>
+            </div>
+            <div class="contentdiv">
+              <p class="content">
+                Lorem Ipsum is simply dummy text of the printing and typesetting
+                industry. Lorem Ipsum has been the industry's standard dummy
+                text ever since the 1500s, when an unknown printer took a galley
+                of type and scrambled it to make a type specimen book. It has
+                survived not only five centuries, but also the leap into
+                electronic typesetting, remaining essentially unchanged. It was
+                popularised in the 1960s with the release of Letraset sheets
+                containing Lorem Ipsum passages, and more recently with desktop
+                publishing software like Aldus PageMaker including versions of
+                Lorem Ipsum.
+              </p>
+            </div>
+          </div>
+
+          <div class="map">
+
+          </div>
+        </div> <!-- end post -->
+
+      </div> <!-- end container -->
+
+    <script src="https://www.gstatic.com/firebasejs/3.2.0/firebase.js"></script>
+    <script src="../scripts/feedLoader.js"></script>
+
+    <script>
+
+    </script>
+
+    <script
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDiXueHsLIsYcnjjppxwoQOzMKmbzbQkE0&callback=initMap"
+    ></script>
+
+  </body>
+</html>

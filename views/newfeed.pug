@@ -1,0 +1,94 @@
+extends layout
+
+block headtag
+    link(rel="stylesheet" href="/css/newfeed.css")
+    script(src="/../js/textarea.js")
+    script.
+        $(function(){
+            $('.normal').autosize();
+            $('.animated').autosize({append: "\n"});
+        });
+
+
+block layout-content
+    .container.mt-3
+        .row#submitrow
+            .col
+                .postsubmit.position-relative
+                    .pfp.align-self-start
+                    .media1#media1
+                        .media-body
+                            .form-group
+                                textarea.form-control.animated#submitinput(placeholder="What's going on?")
+                    button.btn.btn-primary.align-self-end.ml-auto#submitbutton Shout!
+                    .position-absolute.bottom-left#locationicon
+                        i.fas.fa-map-marked-alt.fa-2x(style='color: #2F6A64;')
+                    .btn-group.dropright.position-absolute.bottom-left#dropright
+                        button.btn.btn-secondary.dropdown-toggle#dropbutton(type='button' data-toggle='dropdown' aria-haspopup='true' aria-expanded='false') Category
+                        .dropdown-menu
+                            a.dropdown-item(href="#") Medical Supplies
+                            a.dropdown-item(href="#") Other
+        .row#postrow
+            .col-md-9
+                .postborder
+                    .user
+                        .pfp
+                        h2.username
+                            a(href='#')  Moaz
+                    .contentdiv
+                        p.content
+                            | Lorem Ipsum is simply dummy text of the printing and typesetting
+                            | industry. Lorem Ipsum has been the industry standard dummy
+                            | text ever since the 1500s, when an unknown printer took a galley
+                            | of type and scrambled it to make a type specimen book. It has
+                            | survived not only five centuries, but also the leap into
+                            | electronic typesetting, remaining essentially unchanged. It was
+                            | popularised in the 1960s with the release of Letraset sheets
+                            | containing Lorem Ipsum passages, and more recently with desktop
+                            | publishing software like Aldus PageMaker including versions of
+                            | Lorem Ipsum.
+            .col-md-3
+                #map
+                    script.
+                        function initMap() {
+                        // The location of Uluru
+                        var uluru = { lat: -25.344, lng: 131.036 };
+                        // The map, centered at Uluru
+                        var map = new google.maps.Map(document.getElementById("map"), {
+                        zoom: 4,
+                        center: uluru,
+                        });
+                        var map2 = new google.maps.Map(document.getElementById("secondmap"), {
+                        zoom: 4,
+                        center: uluru,
+                        });
+                        // The marker, positioned at Uluru
+                        var marker = new google.maps.Marker({
+                        position: uluru,
+                        map: map,
+                        });
+                        }
+        .row#postrow
+            .col-md-3
+                #secondmap
+            .col-md-9
+                .secondpostborder
+                    .user
+                        .pfp
+                        h2.username
+                            a(href='#')  Moaz
+                    .contentdiv
+                        p.content
+                            | Lorem Ipsum is simply dummy text of the printing and typesetting
+                            | industry. Lorem Ipsum has been the industry standard dummy
+                            | text ever since the 1500s, when an unknown printer took a galley
+                            | of type and scrambled it to make a type specimen book. It has
+                            | survived not only five centuries, but also the leap into
+                            | electronic typesetting, remaining essentially unchanged. It was
+                            | popularised in the 1960s with the release of Letraset sheets
+                            | containing Lorem Ipsum passages, and more recently with desktop
+                            | publishing software like Aldus PageMaker including versions of
+                            | Lorem Ipsum.
+    script(async='' defer='' src='https://maps.googleapis.com/maps/api/js?key=AIzaSyDiXueHsLIsYcnjjppxwoQOzMKmbzbQkE0&callback=initMap')
+    script(src='https://www.gstatic.com/firebasejs/3.2.0/firebase.js')
+    script(src='../scripts/feedLoader.js')

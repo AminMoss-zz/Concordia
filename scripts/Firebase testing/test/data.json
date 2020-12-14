@@ -1,0 +1,12 @@
+{
+    "array": [
+                {
+                    "subject" : "subject 1",
+                    "post": "hello world is a post"
+                },
+                {
+                    "subject" : "subject 2",
+                    "post": "post 2"
+                }
+            ]
+}

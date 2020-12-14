@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <link
+      rel="shortcut icon"
+      ,
+      href="../images/ss_monogram_michaelspitz-cropped.png"
+    />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <meta name="theme-color" content="#000000" />
+    <title>Concordia</title>
+    <link rel="stylesheet" href="../css/Login.css" />
+    <link rel="stylesheet" href="../css/Home.css" />
+  </head>
+
+  <body>
+    <div id="root">
+      <div id="menu">
+        <div id="icon"></div>
+        <div id="name">
+          <p>Concordia</p>
+        </div>
+        <ul class="menuitems">
+          <li class="menuitem"><a href="#Home">Home</a></li>
+          <li class="menuitem"><a href="#Explore">Explore</a></li>
+          <li class="menuitem"><a href="#Contact">Contact</a></li>
+          <li class="menuitem"><a href="#About">About</a></li>
+        </ul>
+      </div>
+      <div id="BannerDiv">
+        <h1 id="Banner">Howdy There, Fellow Torpedo Member!</h1>
+        <button id="fblogin">Login with Facebook</button>
+      </div>
+      <div class="Message"></div>
+    </div>
+
+    <script src="https://www.gstatic.com/firebasejs/7.15.2/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.15.2/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.15.2/firebase-firestore.js"></script>
+    <script defer async src="../scripts/login.js"></script>
+  </body>
+</html>
